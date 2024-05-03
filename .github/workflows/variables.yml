@@ -11,6 +11,6 @@ jobs:
       SALUDO: Hola
     steps:
       - name: Saludar
-        run: echo "$SALUDO, $NOMBRE. Estamos es $MES! "
+        run: echo "$SALUDO, $NOMBRE. Estamos en $MES!"
         env:
           NOMBRE: Kary
