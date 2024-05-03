@@ -13,15 +13,15 @@ on:
         default: 'Juan'
         type: string
 jobs:
-  mayor:
+  experto:
     if: ${{ inputs.leng == 'JS' }} 
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
         run: echo ${{ inputs.nombre }} es experto programador
-  menor:
+  normal:
     if: ${{ inputs.leng != 'JS' }} 
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
-        run: echo ${{ inputs.nombre }} es programador 
+        run: echo ${{ inputs.nombre }} es programador  normal
